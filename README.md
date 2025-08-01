@@ -28,6 +28,7 @@ End setup instructions
 ```bash
 cd path/to/your/app
 pip install -e . "langgraph-cli[inmem]"
+pip install -r requirements.txt
 ```
 
 2. (Optional) Customize the code and project as needed. Create a `.env` file if you need to use secrets.

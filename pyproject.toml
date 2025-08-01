@@ -1,16 +1,22 @@
 [project]
 name = "andrey-agent"
 version = "0.0.1"
-description = "Starter template for making a new agent LangGraph."
+description = "Practicing LangGraph"
 authors = [
-    { name = "William Fu-Hinthorn", email = "13333726+hinthornw@users.noreply.github.com" },
+    { name = "Andrey Bolaños", email = "andreybs11@gmail.com" },
 ]
 readme = "README.md"
 license = { text = "MIT" }
-requires-python = ">=3.9"
+requires-python = ">=3.13,<4.0"
 dependencies = [
+    "dotenv>=0.9.9",
     "langgraph>=0.2.6",
     "python-dotenv>=1.0.1",
+    "langchain (>=0.3.27,<0.4.0)",
+    "langchain-core (>=0.3.72,<0.4.0)",
+    "langchain-community (>=0.3.27,<0.4.0)",
+    "langchain-groq (>=0.3.6,<0.4.0)",
+    "requests (>=2.32.4,<3.0.0)",
 ]
 
 
@@ -54,6 +60,9 @@ lint.ignore = [
 "tests/*" = ["D", "UP"]
 [tool.ruff.lint.pydocstyle]
 convention = "google"
+
+[tool.poetry]
+package-mode = false
 
 [dependency-groups]
 dev = [
